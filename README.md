@@ -3,7 +3,7 @@ A class to solve a CSP using using Depth First Search with Pruning that prints t
 console and the number of failing consistency checks. Different problems can be modeled by changing the
 hardcoded values of VariableOrdering, VariableDomain, and manually adding new constraints in IsSatisfyingConstraint.
 
-##CURRENT INPUTS  
+## CURRENT INPUTS  
     1. 8 variables a,b,c,d,e,f,g,h with the same domain {1,2,3,4}
     2. A variable ordering for the search (ex: "F", "H", "C", "D", "G", "E", "A", "B")
     3. A set of constraints that need to be satisfied:
@@ -31,7 +31,7 @@ hardcoded values of VariableOrdering, VariableDomain, and manually adding new co
     4. Variable Ordering
     5. Solutions (if they exist)
     
-##Sample Output
+## Sample Output
 SEARCH TREE  
 F = 4 H = 4 failure  
 F = 4 H = 3 C = 2 failure  
