@@ -1,5 +1,5 @@
 # CSP-Solver
-This is a personal project that was developed in Java with the goal of solving Numerical Constraint Satisfaction Problems (CSPs) using Depth First Search with pruning. The program is designed to output the SEARCH TREE to the console and track the number of failed consistency checks. The specific problem being solved can be altered by adjusting the hardcoded values of VariableOrdering, VariableDomain, and adding new numerical constraints in the IsSatisfyingConstraint method. 
+This is a personal project written in Java with the goal of solving Numerical Constraint Satisfaction Problems (CSPs) using Depth First Search with pruning. The program is designed to output the SEARCH TREE to the console and track the number of failed consistency checks. The specific problem being solved can be altered by adjusting the hardcoded values of VariableOrdering, VariableDomain, and adding new numerical constraints in the IsSatisfyingConstraint method.
 
 This project was an opportunity for me to gain experience in solving CSPs through the use of search algorithms.
 
