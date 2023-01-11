@@ -41,8 +41,8 @@ import java.util.Stack;
 public class CSP {
     public static final int NUMBER_OF_CONSTRAINTS = 17;
 
-    public static final String SOLUTION_MESSAGE = "solution";
-    public static final String FAILURE_MESSAGE = "failure";
+    public static final String SOLUTION_MESSAGE = "solution  ";
+    public static final String FAILURE_MESSAGE = "failure  ";
 
     public static final List<String> VariableOrdering = new ArrayList<>(Arrays.asList("F", "H", "C", "D", "G", "E", "A", "B"));
     public static final List<Integer> VariableDomain = new ArrayList<>(Arrays.asList(1,2,3,4));
@@ -52,15 +52,15 @@ public class CSP {
 
     // Constructor for CSP. Begins CSP immediately when CSP object is created.
     public CSP(){
-        System.out.println("SEARCH TREE");
+        System.out.println("SEARCH TREE  ");
 
         Setup();
 
         List<State> solutions = PerformDFSWithPruning();
 
-        System.out.println("Variable Ordering: " + VariableOrdering + "\n");
+        System.out.println("Variable Ordering: " + VariableOrdering + "\n  ");
 
-        System.out.println("\nSolutions:");
+        System.out.println("\nSolutions:  ");
         for (int i = 0; i < solutions.size(); i++)  {
             System.out.print(i + 1 + ". ");
             solutions.get(i).PrintValues();
@@ -112,8 +112,8 @@ public class CSP {
             loopCounter++;
         }
 
-        System.out.println("\nNumber of loops taken: " + loopCounter);
-        System.out.println("Failed Consistency Checks: " + failedConsistencyChecks);
+        System.out.println("\nNumber of loops taken: " + loopCounter + "  ");
+        System.out.println("Failed Consistency Checks: " + failedConsistencyChecks + "  ");
         return solutions;
     }
 
@@ -142,7 +142,7 @@ public class CSP {
         String nextAssignment = FindNextAssignment(state);
 
         if (nextAssignment == null) {
-            System.out.println("Nothing left to be assigned. Returning empty successor list.");
+            System.out.println("Nothing left to be assigned. Returning empty successor list.  ");
             return successors;
         }
 
@@ -204,7 +204,7 @@ public class CSP {
                 }
                 return successors;
             default:
-                System.out.println("Invalid Assignment! An error occurred!");
+                System.out.println("Invalid Assignment! An error occurred!  ");
                 return null;
         }
     }
@@ -247,12 +247,12 @@ public class CSP {
                         return "H";
                     else continue;
                 default:
-                    System.out.println("Error. Checking for invalid variable");
+                    System.out.println("Error. Checking for invalid variable  ");
                     return null;
             }
         }
 
-        System.out.println("No more variables to be assigned");
+        System.out.println("No more variables to be assigned  ");
         return null;
     }
 
@@ -316,7 +316,7 @@ public class CSP {
             case 16: return d == State.UNASSIGNED || f == State.UNASSIGNED || d != f - 1;
             case 17: return e == State.UNASSIGNED || f == State.UNASSIGNED || Math.abs(e - f) % 2 == 1;
             default:
-                System.out.println("Checked Illegal Constraint Number");
+                System.out.println("Checked Illegal Constraint Number  ");
                 return false;
         }
     }
