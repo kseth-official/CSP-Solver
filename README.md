@@ -1,7 +1,5 @@
 # CSP-Solver
-Presenting my Java-based GitHub project, which focused on solving Numerical Constraint Satisfaction Problems (CSPs).
-
-This project showcases a practical approach to CSP-solving, employing a Depth First Search method enhanced with pruning. It offers a clear view of the SEARCH TREE in the console and diligently tracks failed consistency checks.
+Presenting my Java-based GitHub project, which focused on solving Numerical Constraint Satisfaction Problems (CSPs) through a practical approach, employing a Depth First Search method enhanced with pruning. It offers a clear view of the SEARCH TREE in the console and diligently tracks failed consistency checks.
 
 Flexibility is at your fingertips – adjust the hardcoded values of VariableOrdering and VariableDomain to tailor the solution to different problems. Expand the scope by introducing new numerical constraints through the IsSatisfyingConstraint method for added depth.
 
