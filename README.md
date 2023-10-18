@@ -1,5 +1,5 @@
 # CSP-Solver
-This project focuses on solving Numerical Constraint Satisfaction Problems (CSPs) through a practical approach, employing a Depth First Search (DFS) algorithm enhanced with pruning. 
+This project focuses on solving Numerical Constraint Satisfaction Problems (CSPs), employing Depth First Search (DFS) with pruning in Java. 
 
 It offers a clear view of the SEARCH TREE in the console and diligently tracks failed consistency checks.
 
